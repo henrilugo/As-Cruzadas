@@ -1,0 +1,57 @@
+/* Ajustes gerais */
+body {
+    font-size: 1rem; /* Tamanho base */
+}
+
+/* Para telas médias (tablets e similares) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem; /* Reduz o tamanho do título */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Ajusta o subtítulo */
+    }
+
+    nav {
+        flex-wrap: wrap; /* Permite que os links quebrem linha */
+    }
+
+    nav a {
+        padding: 5px 10px; /* Reduz o espaço entre links */
+        font-size: 0.9rem;
+    }
+}
+
+/* Para telas pequenas (smartphones) */
+@media (max-width: 480px) {
+    header {
+        height: 50vh; /* Reduz altura do cabeçalho */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Reduz tamanho do título */
+    }
+
+    header p {
+        font-size: 0.8rem; /* Texto menor */
+    }
+
+    nav {
+        flex-direction: column; /* Empilha os links */
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.8rem; /* Reduz tamanho do texto dos links */
+    }
+
+    section {
+        padding: 10px; /* Reduz padding */
+    }
+
+    .elenco-container {
+        flex-direction: column; /* Empilha os itens do elenco */
+        gap: 15px;
+    }
+}
